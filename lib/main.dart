@@ -16,10 +16,28 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.indigo,
         body: SafeArea(
             child: Column(
-              children: <Widget>[
+              children: const <Widget>[
                 CircleAvatar(
-                  radius: 50.0,
-                  backgroundColor: Colors.redAccent,
+                  radius: 100.0,
+                  backgroundImage: AssetImage('images/micard.jpg'),
+                ),
+                Text(
+                  'Sirajul Islam',
+                  style: TextStyle(
+                    fontSize: 40.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico',
+                  )
+                ),
+                Text(
+                  'Flutter | Google Cloud | QA | IT Support',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                    fontFamily: 'Source Sans Pro'
+                  ),
                 ),
               ],
             ),
