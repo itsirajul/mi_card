@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( MyApp());
+  runApp( const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.indigo,
         body: SafeArea(
             child: Column(
-              children: const <Widget>[
+              children:  <Widget>[
                 CircleAvatar(
                   radius: 100.0,
                   backgroundImage: AssetImage('images/micard.jpg'),
@@ -33,14 +33,25 @@ class MyApp extends StatelessWidget {
                 Text(
                   'Flutter | Google Cloud | QA | IT Support',
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontWeight: FontWeight.normal,
-                    fontFamily: 'Source Sans Pro'
+                    fontFamily: 'Source Sans Pro',
+                    letterSpacing: 1.0,
                   ),
                 ),
+                Container(
+                  child:  Row(
+                    children: <Widget> [
+                      Icon(
+                        Icons.phone,
+                        size:100.0,
+                      ),
+                    ],
+                  ) ,
+                ),
               ],
-            ),
+          ),
         ),
       ),
     );
