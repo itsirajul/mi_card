@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
             child: Column(
               children:  <Widget>[
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 100.0,
                   backgroundImage: AssetImage('images/micard.jpg'),
                 ),
-                Text(
-                  'Sirajul Islam',
+                const Text(
+                  'Sirajul',
                   style: TextStyle(
                     fontSize: 40.0,
                     color: Colors.white,
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Pacifico',
                   )
                 ),
-                Text(
+                const Text(
                   'Flutter | Google Cloud | QA | IT Support',
                   style: TextStyle(
                     fontSize: 22.0,
@@ -42,10 +42,10 @@ class MyApp extends StatelessWidget {
                 ),
                 Container(
                   child:  Row(
-                    children: <Widget> [
+                    children: const <Widget> [
                       Icon(
                         Icons.phone,
-                        size:100.0,
+                        size:50.0,
                       ),
                     ],
                   ) ,
