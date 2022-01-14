@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                   backgroundImage: AssetImage('images/micard.jpg'),
                 ),
                 const Text(
-                  'Sirajul',
+                  'Sirajul Islam',
                   style: TextStyle(
                     fontSize: 40.0,
                     color: Colors.white,
