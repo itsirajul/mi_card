@@ -18,13 +18,14 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:  const <Widget>[
-                //Image with Circle
+
+                //---------------------------------------------------------------Image with Circle-----------------------------------------
                 CircleAvatar(
                   radius: 80.0,
                   backgroundImage: AssetImage('images/micard.jpg'),
                 ),
 
-                //Name
+                //---------------------------------------------------------------Name-------------------------------------------------------
                 Text(
                   'Sirajul Islam',
                   style: TextStyle(
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
                   )
                 ),
 
-                //Profession
+                //---------------------------------------------------------------Profession---------------------------------------------------
                 Text(
                   'Flutter Developer',
                   style: TextStyle(
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
 
-                //Divider Line
+                //---------------------------------------------------------------Divider Line-------------------------------------------------
                 SizedBox(
                   height: 20.0,
                   width: 200.0,
@@ -56,7 +57,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
 
-                ///Phone Number Card
+                ///--------------------------------------------------------------Phone Number Card--------------------------------------------
                 Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
@@ -76,7 +77,7 @@ class MyApp extends StatelessWidget {
                 ),
                 ),
 
-               //Email Card
+               //----------------------------------------------------------------Email Card--------------------------------------------------
                Card(
                   color: Colors.white,
                  // padding: EdgeInsets.all(10.0),
