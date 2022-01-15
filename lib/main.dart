@@ -18,10 +18,13 @@ class MyApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children:  const <Widget>[
+                //Image with Circle
                 CircleAvatar(
                   radius: 80.0,
                   backgroundImage: AssetImage('images/micard.jpg'),
                 ),
+
+                //Name
                 Text(
                   'Sirajul Islam',
                   style: TextStyle(
@@ -31,6 +34,8 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Pacifico',
                   )
                 ),
+
+                //Profession
                 Text(
                   'Flutter Developer',
                   style: TextStyle(
@@ -41,6 +46,8 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                   ),
                 ),
+
+                //Divider Line
                 SizedBox(
                   height: 20.0,
                   width: 200.0,
@@ -48,6 +55,8 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+
+                ///Phone Number Card
                 Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
@@ -59,13 +68,15 @@ class MyApp extends StatelessWidget {
                     title: Text(
                       '+8801318402075',
                       style: TextStyle(
-                        fontSize: 20.0,
+                        fontFamily: "Source Sans Pro",
                         color: Colors.indigo,
-                        fontFamily: 'Source Sans Pro'
+                        fontSize: 20.0,
                       ),
                     ),
                 ),
                 ),
+
+               //Email Card
                Card(
                   color: Colors.white,
                  // padding: EdgeInsets.all(10.0),
