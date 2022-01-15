@@ -16,12 +16,13 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.indigo,
         body: SafeArea(
             child: Column(
-              children:  <Widget>[
-                const CircleAvatar(
-                  radius: 100.0,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children:  const <Widget>[
+                CircleAvatar(
+                  radius: 80.0,
                   backgroundImage: AssetImage('images/micard.jpg'),
                 ),
-                const Text(
+                Text(
                   'Sirajul Islam',
                   style: TextStyle(
                     fontSize: 40.0,
@@ -30,26 +31,61 @@ class MyApp extends StatelessWidget {
                     fontFamily: 'Pacifico',
                   )
                 ),
-                const Text(
-                  'Flutter | Google Cloud | QA | IT Support',
+                Text(
+                  'Flutter Developer',
                   style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.white60,
                     fontFamily: 'Source Sans Pro',
-                    letterSpacing: 1.0,
+                    letterSpacing: 2.5,
                   ),
                 ),
-                Container(
-                  child:  Row(
-                    children: const <Widget> [
-                      Icon(
-                        Icons.phone,
-                        size:50.0,
-                      ),
-                    ],
-                  ) ,
+                SizedBox(
+                  height: 20.0,
+                  width: 200.0,
+                  child: Divider(
+                    color: Colors.white,
+                  ),
                 ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone_iphone,
+                      color: Colors.indigo,
+                    ) ,
+                    title: Text(
+                      '+8801318402075',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.indigo,
+                        fontFamily: 'Source Sans Pro'
+                      ),
+                    ),
+                ),
+                ),
+               Card(
+                  color: Colors.white,
+                 // padding: EdgeInsets.all(10.0),
+                  margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                  child: ListTile(
+                    leading:Icon(
+                      Icons.mail,
+                      color: Colors.indigo,
+                    ),
+                    title: Text(
+                      'itsirajul@gmail.com',
+                      style: TextStyle(
+                        fontFamily: "Source Sans Pro",
+                        color: Colors.indigo,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                  ),
+
               ],
           ),
         ),
